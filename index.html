@@ -5,29 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <style> 
-.manrope-<uniquifier> {
+.manrope-font {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: normal;
   font-style: normal;
 }
 </style>
-<body>
+    <script
+      src="https://kit.fontawesome.com/29b74d4afd.js"
+      crossorigin="anonymous"></script>
+</head>
+
+<body class="manrope-font">
    <div class="px-15">
-     <div class="pb-[40px]">
+     <div class="pb-[40px] flex pt-8 gap-5 justify-between">
         <div>
-            <h1 class="text-5xl font-bold manrope-<uniquifier>">It's good tea time at The Tea House</h1>
-            <p class="">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <h1 class="text-5xl font-bold manrope-<uniquifier>">It's good <br>tea time at The <br>Tea House</h1>
+            <p class="py-7">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction To Your Taste Buds.</p>
             <div>
-                <button class="bg-orange-500 text-white px-2 rounded-sm hover:bg-blue-500 hover:text-gray-200 cursor-pointer">Explore More</button><img src="./images/arrow.png" alt=""></div>
+                <button class="bg-linear-to-l from-[#FF0000] to-[#FF8938] text-white px-2 py-1 rounded-sm hover:bg-blue-500 hover:text-gray-200 cursor-pointer ">Explore More</button><img src="./images/arrow.png" alt="">
+            </div>
         </div>
         <div>
-            <img src="" alt="">
+            <img class="w-96" src="./images/banner.png" alt="">
+            <div class="border bg-white w-50 px-7 py-2 rounded absolute top-65">
+                <img class="" src="" alt="">
+                <div>
+                    <h1>5.00</h1>
+                    <p>Trust Pilot Ratings</p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Featured Section -->
@@ -35,22 +47,22 @@
         <h1 class="text-3xl font-bold">Our Featured Products</h1>
         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,<br/> by injected humour, or randomised words which don't look even slightly believable. </p>
         <div class="flex gap-[40px] pt-[30px]">
-            <div class="bg-red-50  rounded-lg p-[20px] ">
+            <div class="bg-linear-to-b from-[#eeeded] to-[#f7f5f5]  rounded-lg p-[20px] ">
                 <img class="pl-[50px]" src="./images/tea-1.png" alt="">
                 <h1 class="text-xl font-bold pt-[10px]">Milk Tea</h1>
                 <p>Creamer could be replaced by fresh milk</p>
             </div>
-            <div class="bg-red-50 rounded-lg p-[20px]">
+            <div class="bg-linear-to-b from-[#eeeded] to-[#f7f5f5]   rounded-lg p-[20px]">
                 <img class="pl-[50px]" src="./images/tea-2.png" alt="">
                 <h1 class="text-xl font-bold pt-[10px]">Black Tea</h1>
                 <p>Creamer could be replaced by fresh milk</p>
             </div>
-            <div class="bg-red-50 rounded-lg p-[20px]">
+            <div class="bg-linear-to-b from-[#eeeded] to-[#f7f5f5]   rounded-lg p-[20px]">
                 <img class="pl-[50px]" src="./images/tea-3.png" alt="">
                 <h1 class="text-xl font-bold pt-[10px]">Lemon Tea</h1>
                 <p>Creamer could be replaced by fresh milk</p>
             </div>
-            <div class="bg-red-50 rounded-lg p-[20px]">
+            <div class="bg-linear-to-b from-[#eeeded] to-[#f7f5f5]   rounded-lg p-[20px]">
                 <img class="pl-[50px]" src="./images/tea-4.png" alt="">
                 <h1 class="text-xl font-bold pt-[10px]">Green Tea</h1>
                 <p>Creamer could be replaced by fresh milk</p>
@@ -75,7 +87,7 @@
         </div>
     </section>
     <!-- Super Clients Section -->
-     <section class="bg-red-400 rounded-md  flex px-15 py-20 gap-x-10 ">
+     <section class="bg-linear-to-r from-[#FF8938] to-[#FF0000] rounded-md  flex px-15 py-20 gap-x-10 ">
         <div>
             <h1 class="text-4xl font-bold text-white">Meet Our Super <br>Clients</h1>
             <p class="py-5 text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
@@ -92,7 +104,7 @@
      <section class="text-center py-20">
         <h1 class="text-4xl font-bold">News & Events</h1>
         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-        <div class="flex rounded-md gap-x-5 pt-5 ">
+        <div class="flex  gap-x-5 pt-5 ">
             <div class="border-1  py-5">
                 <img class="pl-7" src="./images/news-1.png" alt="">
                 <data value="27/11/2025">Feb 27 2025</data>
